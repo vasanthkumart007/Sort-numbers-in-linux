@@ -1,0 +1,19 @@
+#!/bin/bash
+#_______________________________________#
+#Author: Vasanth
+#_______________________________________#
+#Description: Sort the number in a file and the sorted list is sent to another file
+#_______________________________________#
+#Date: Monday 12 April 2021 07:02:43 PM IST
+#_______________________________________#
+
+
+sed -i 's/,/\n/g' /home/vasanth/ps/numbers
+
+
+echo "NUMBERS ARE SORTED AND STORED IN A FILE"
+
+sort -n /home/vasanth/ps/numbers > /home/vasanth/ps/sorted-numbers
+
+
+
